@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="theshedcrud.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126.0" layoutY="158.0" minHeight="16" minWidth="69" />
+      <TextField fx:id="txtName" layoutX="97.0" layoutY="68.0" />
+      <TextField fx:id="txtBrand" layoutX="97.0" layoutY="105.0" />
+      <TextField fx:id="txtType" layoutX="97.0" layoutY="137.0" />
+      <TextField fx:id="txtPrice" layoutX="97.0" layoutY="172.0" />
+      <TextField fx:id="txtDesc" layoutX="97.0" layoutY="208.0" />
+      <Label layoutX="25.0" layoutY="212.0" text="Description" />
+      <Label layoutX="42.0" layoutY="176.0" text="Price" />
+      <Label layoutX="42.0" layoutY="141.0" text="Type" />
+      <Label layoutX="39.0" layoutY="109.0" text="Brand" />
+      <Label layoutX="39.0" layoutY="72.0" text="Name" />
+      <Button fx:id="btnClear" layoutX="259.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="61.0" text="Clear" />
+      <Button fx:id="btnDelete" layoutX="259.0" layoutY="105.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="61.0" text="Delete" />
+      <Button fx:id="btnUpdate" layoutX="259.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="61.0" text="Update" />
+      <Button fx:id="btnAdd" layoutX="259.0" layoutY="33.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="61.0" text="Add" />
+      <Button fx:id="btnExit" layoutX="259.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="61.0" text="Exit" />
+      <TableView fx:id="tvBikes" layoutX="14.0" layoutY="242.0" onMouseClicked="#handleMouseAction" prefHeight="298.0" prefWidth="869.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="44.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="142.0" text="Name" />
+            <TableColumn fx:id="colBrand" prefWidth="130.0" text="Brand" />
+            <TableColumn fx:id="colType" prefWidth="129.0" text="Type" />
+            <TableColumn fx:id="colPrice" prefWidth="109.0" text="Price" />
+            <TableColumn fx:id="colDesc" prefWidth="82.0" text="Description" />
+            <TableColumn fx:id="colImage" prefWidth="232.0" text="Image" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtId" layoutX="97.0" layoutY="33.0" />
+      <Label layoutX="42.0" layoutY="37.0" text="Id" />
+      <Button fx:id="btnImage" layoutX="382.0" layoutY="33.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.0" prefHeight="55.0" prefWidth="159.0" text="Choose Image" />
+    </children>
+</AnchorPane>
